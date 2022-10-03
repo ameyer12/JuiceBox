@@ -8,6 +8,8 @@ server.use(morgan('dev'));
 
 server.use(express.json())
 
+require('dotenv').config();
+
 const { client } = require('./db');
 client.connect();
 
